@@ -72,7 +72,7 @@ export default function WhoWeAre() {
                         <div className="relative w-full aspect-[4/3] sm:aspect-[16/9] lg:aspect-square xl:aspect-[4/3] rounded-[32px] overflow-hidden shadow-2xl">
                             <Image
                                 src={aboutImage}
-                                alt="Eyoha Digitals Team Meeting"
+                                alt="Lisan Creatives Team Meeting"
                                 fill
                                 priority
                                 className="object-cover transform hover:scale-105 transition duration-500 ease-in-out"

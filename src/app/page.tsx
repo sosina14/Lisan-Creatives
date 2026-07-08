@@ -4,8 +4,8 @@ import ClientSuccessStories from "@/sections/ClientSuccessStories";
 import CtaBanner from "@/sections/CtaBanner";
 import CtaSection from "@/sections/CtaSection";
 // import ExcellenceSection from "@/sections/ExcellenceSection";
-import EyohaGuarantee from "@/sections/EyohaGuarantee";
-import EyohaGuaranteenew from "@/sections/EyohaGuaranteenew";
+import LisanGuarantee from "@/sections/LisanGuarantee";
+import LisanGuaranteenew from "@/sections/LisanGuaranteenew";
 import FeaturesSection from "@/sections/FeaturesSection";
 import Footer from "@/sections/Footer";
 import Hero from "@/sections/Hero";
@@ -29,11 +29,11 @@ export default function Home() {
 
             <ClientSuccessStories />
             {/* <PricingPlans /> */}
-            <EyohaGuarantee />
+            <LisanGuarantee />
             {/* <FeaturedClients /> */}
             <PricingSection />
             <CtaSection />
-            <EyohaGuaranteenew />
+            <LisanGuaranteenew />
             {/* <ExcellenceSection /> */}
             <FeaturesSection />
             <Footer />

@@ -4,55 +4,54 @@ import sofiFurnitureImage from "../assets/images/sofiFerniture.png";
 import FinanceImage from "../assets/images/aminhospitallogo.png";
 import galaxyFurniture from "../assets/images/galaxyfurniture.png";
 import makiImage from "../assets/images/maki.png";
-import sebenImage from "../assets/images/sebenlogo.png";
 import Image from "next/image";
 
 const clientLogos = [
     {
         src: skillBridgeLogo,
-        alt: "Flintstone",
+        alt: "Skillbridge Institute of Technology",
         radius: 245,
         angle: -140,
         size: 110, // Added custom size
     },
     {
-        src: sebenImage,
-        alt: "Seben",
+        src: sofiFurnitureImage,
+        alt: "Amen Furniture",
         radius: 100,
         angle: -100,
         size: 70, // Smaller size
     },
     {
         src: FinanceImage,
-        alt: "Real Estate",
+        alt: "Amin General Hospital",
         radius: 245,
         angle: -90,
         size: 120, // Larger size
     },
     {
         src: makiImage,
-        alt: "Ethio Telecom",
+        alt: "Maki Interior Design",
         radius: 245,
         angle: -40,
         size: 90,
     },
     {
         src: galaxyFurniture,
-        alt: "Meta",
+        alt: "Galaxy Furniture",
         radius: 245,
         angle: 90,
         size: 100,
     },
     {
         src: beltech,
-        alt: "Help",
+        alt: "Beltech Solutions",
         radius: 170,
         angle: 150,
         size: 100,
     },
     {
         src: sofiFurnitureImage,
-        alt: "Finance",
+        alt: "Safe Furniture",
         radius: 170,
         angle: 10,
         size: 75,
@@ -99,17 +98,12 @@ export default function ClientSuccessStories() {
                             <span className={purpleAccent}>stories</span>
                         </h2>
                         <p className="text-gray-600 text-lg mb-10 max-w-[550px]">
-                            Join over 500+ companies that trust us to deliver
-                            exceptional results.
+                            Join companies that trust us to deliver exceptional digital results.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 mb-12">
                             <button
-                                className="text-white px-8 h-12 rounded-lg font-semibold shadow-xl bg-gradient-to-right from-[#FF8C00] to-[#F06A35] hover:opacity-90 transition-all"
-                                style={{
-                                    background:
-                                        "linear-gradient(to right, #FF8C00, #F06A35)",
-                                }}
+                                className="text-white px-8 h-12 rounded-lg font-semibold shadow-xl bg-gradient-to-right from-[#6A0DAD] to-[#9370DB] hover:opacity-90 transition-all"
                             >
                                 View All Clients
                             </button>
@@ -122,7 +116,7 @@ export default function ClientSuccessStories() {
                         <div className="grid grid-cols-3 gap-4 md:gap-12 border-t border-gray-100 pt-8">
                             <StatBlock
                                 label="Happy Clients"
-                                value="500+"
+                                value="7+"
                                 accentColor={purpleAccent}
                             />
                             <StatBlock

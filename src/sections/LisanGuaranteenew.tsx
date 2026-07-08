@@ -68,27 +68,27 @@ const GuaranteeCard = ({
     );
 };
 
-export default function EyohaGuaranteenew() {
+export default function LisanGuaranteenew() {
     const cards = [
         {
             icon: <Target size={22} />,
             title: "Real Impact",
             description:
-                "We promise marketing that delivers, not vanity real impact metrics.",
+                "We promise marketing that delivers real impact, not vanity metrics.",
             iconBgColor: "bg-[#8B5CF6]",
         },
         {
             icon: <Settings size={22} />,
             title: "Custom Strategy",
             description:
-                "Every strategy is customized for your business, backed by analytics, creativity",
+                "Every strategy is customized for your business, backed by analytics and creativity.",
             iconBgColor: "bg-[#F97316]",
         },
         {
             icon: <BarChart3 size={22} />,
             title: "Your Growth",
             description:
-                "Your growth is — and we our priority stand behind every campaign we launch.",
+                "Your growth is our priority — and we stand behind every campaign we launch.",
             iconBgColor: "bg-[#F97316]",
         },
     ];
@@ -102,7 +102,7 @@ export default function EyohaGuaranteenew() {
                 <div className="text-center mb-20">
                     <div className="w-20 h-[3px] bg-gradient-to-r from-[#8B5CF6] to-[#F97316] mx-auto mb-6" />
                     <h2 className="text-[#0F172A] text-4xl md:text-5xl font-extrabold tracking-tight">
-                        The Eyoha Guarantee
+                        The Lisan Guarantee
                     </h2>
                     <div className="w-24 h-[3px] bg-gradient-to-r from-[#8B5CF6] to-[#F97316] mx-auto mt-6" />
                 </div>

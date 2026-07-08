@@ -22,14 +22,14 @@ interface ClientCardProps {
 
 const clientData: ClientCardProps[] = [
     {
-        id: "galaxyFurniture",
-        logo: galaxyfurniture,
-        companyName: "Galaxy Furniture",
+        id: "amenFurniture",
+        logo: sofifurniture,
+        companyName: "Amen Furniture",
         subcompanyName: "Interior and Furniture",
         testimonial:
-            '"Exceptional digital transformation that increased our conversion rate by 340%"',
-        category: "E-commerce Platform",
-        accentColor: "orange",
+            '"Strengthened Amen Furniture\'s digital presence through strategic branding, engaging content, and consistent social media management that showcased its modern furniture collections."',
+        category: "Social Media & Branding",
+        accentColor: "purple",
     },
     {
         id: "safeFurniture",
@@ -37,8 +37,8 @@ const clientData: ClientCardProps[] = [
         companyName: "Safe Furniture",
         subcompanyName: "Interior and Furniture",
         testimonial:
-            '"Outstanding mobile app development that revolutionized our customer experience"',
-        category: "Mobile Banking App",
+            '"Built Safe Furniture\'s brand from the ground up with a complete visual identity, strategic content, and social media management to establish a strong and recognizable online presence."',
+        category: "Full Branding & Social Media",
         accentColor: "purple",
     },
     {
@@ -47,18 +47,18 @@ const clientData: ClientCardProps[] = [
         companyName: "Maki Interior Design",
         subcompanyName: "Interior and Furniture",
         testimonial:
-            '"Outstanding mobile app development that revolutionized our customer experience"',
-        category: "Mobile Banking App",
+            '"Increased client inquiries and student enrollment through targeted Facebook and Instagram advertising campaigns designed to reach the right audiences."',
+        category: "Meta Ad Campaigns",
         accentColor: "purple",
     },
     {
         id: "aminHospital",
         logo: amin,
-        companyName: "Amin Hospital",
+        companyName: "Amin General Hospital",
         subcompanyName: "Healthcare Services",
         testimonial:
-            '"Exceptional digital transformation that increased our conversion rate by 340%"',
-        category: "E-commerce Platform",
+            '"Developed a strategic healthcare content framework that improved patient communication, strengthened credibility, and enhanced the hospital\'s digital presence."',
+        category: "Content Development",
         accentColor: "orange",
     },
     {
@@ -67,18 +67,28 @@ const clientData: ClientCardProps[] = [
         companyName: "Skillbridge Institute of Technology",
         subcompanyName: "Education",
         testimonial:
-            '"Exceptional digital transformation that increased our conversion rate by 340%"',
-        category: "E-commerce Platform",
+            '"Created a consistent academic brand and educational content strategy that attracted prospective students and highlighted career-focused technology programs."',
+        category: "Branding & Educational Content",
         accentColor: "orange",
     },
     {
         id: "beltechSolutions",
         logo: beltech,
-        companyName: "Beitech Solutions",
-        subcompanyName: "Education",
+        companyName: "Beltech Solutions",
+        subcompanyName: "B2B Tech",
         testimonial:
-            '"Exceptional digital transformation that increased our conversion rate by 340%"',
-        category: "E-commerce Platform",
+            '"Established a professional B2B digital presence with a strong brand identity and strategic LinkedIn and Telegram content that effectively communicated its technology solutions."',
+        category: "LinkedIn & Telegram Branding",
+        accentColor: "orange",
+    },
+    {
+        id: "galaxyFurniture",
+        logo: galaxyfurniture,
+        companyName: "Galaxy Furniture",
+        subcompanyName: "Interior and Furniture",
+        testimonial:
+            '"Strategic brand positioning and viral TikTok marketing to drive high-volume furniture sales (Coming Soon)."',
+        category: "Brand Positioning",
         accentColor: "orange",
     },
 ];
@@ -98,6 +108,8 @@ const ClientCard = ({
         accentColor === "orange"
             ? "from-purple-500 to-orange-400"
             : "from-orange-400 to-purple-500";
+
+    const hasDetailPage = id !== "galaxyFurniture";
 
     return (
         <div className="relative bg-white rounded-2xl px-8 pb-8 pt-14 shadow-[0_8px_30px_rgb(0,0,0,0.06)] flex flex-col items-center text-center border border-gray-50 transition-transform hover:scale-[1.02] mt-10">
@@ -138,12 +150,21 @@ const ClientCard = ({
             </div>
 
             {/* UPDATED: Link Component replacing the static button */}
-            <Link
-                href={`/Details/${id}`}
-                className="inline-block bg-[#A855F7] hover:bg-[#9333EA] text-white px-10 py-2.5 rounded-lg font-semibold text-sm transition-colors text-center w-full shadow-md hover:shadow-purple-200"
-            >
-                See Details
-            </Link>
+            {hasDetailPage ? (
+                <Link
+                    href={`/Details/${id}`}
+                    className="inline-block bg-[#A855F7] hover:bg-[#9333EA] text-white px-10 py-2.5 rounded-lg font-semibold text-sm transition-colors text-center w-full shadow-md hover:shadow-purple-200"
+                >
+                    See Details
+                </Link>
+            ) : (
+                <button
+                    disabled
+                    className="inline-block bg-gray-300 cursor-not-allowed text-gray-500 px-10 py-2.5 rounded-lg font-semibold text-sm text-center w-full"
+                >
+                    Coming Soon
+                </button>
+            )}
         </div>
     );
 };
