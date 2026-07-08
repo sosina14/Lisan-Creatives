@@ -11,8 +11,7 @@ export default function PortfolioPage() {
             <Navbar2 />
             <PortfolioHero />
             <ProjectGrid />
-            <CaseStudyDetailStrategy />
-            {/* <CaseStudyDetail /> */}
+       
             <Footer />
         </main>
     );
