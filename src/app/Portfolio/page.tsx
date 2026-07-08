@@ -12,7 +12,7 @@ export default function PortfolioPage() {
             <PortfolioHero />
             <ProjectGrid />
             <CaseStudyDetailStrategy />
-            <CaseStudyDetail />
+            {/* <CaseStudyDetail /> */}
             <Footer />
         </main>
     );
