@@ -35,7 +35,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
                 <Image
                     src={thumbnailImage}
                     alt={`Thumbnail for ${title} service`}
-                    layout="fill"
+                    fill
                     objectFit="cover"
                 />
             </div>
